@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <script src="public/test.js"></script>
+    <link rel="stylesheet" href="public/style/app.css">
+</head>
+<body style="background-image: url(./public/style/background.jpg); background-size: cover;background-repeat: no-repeat; background-attachment: fixed; background-position: right;">
+    <div class=" container mt-5 mx-auto">
+        
+        <header class="flex h-1/6 items-center bg-opacity-40 mx-auto font-mono italic text-xs sm:text-xs lg:text-sm lg:font-semibold">
+            <button onclick=""  class="px-4 py-1 whitespace-nowrap border border-cyan-500 bg-cyan-900 text-slate-100 hover:bg-cyan-400 hover:border-cyan-950 hover:border-b-2 mr-3 ">Log in</button>
+            <button onclick="" class=" px-4 py-1 whitespace-nowrap border border-cyan-500 bg-cyan-800 bg-opacity-40 text-cyan-200 hover:bg-cyan-400 hover:border-cyan-950 hover:border-b-4 mr-3">Sing up</button>
+            <nav class="max-sm:hidden flex w-9/12 h-1/6 place-content-center items-center bg-opacity-40 mx-auto gap-5">
+            <div class="flex w-1/12 rounded-3xl bg-gradient-to-r from-blue-200 via-purple-700 to-cyan-200 hover:scale-110"><div href="#" class="w-full rounded-md group bg-gradient-to-tr from-slate-100 via-teal-500 to-stone-100  p-2 hover:shadow-xl hover:shadow-teal-400 hover:rotate-12 hover:scale-90 transition-all ease-in-out"><span class="mr-1">Ticket</span>
+              </div></div> 
+            <div class="w-1/12 relative">
+              <div class="w-full rounded-3xl bg-gradient-to-r from-blue-300 via-purple-700 to-cyan-300 hover:scale-110"><div href="#" onclick="addclass_dropdown(),rotate_svg()" class="flex items-center group w-full rounded-md text-center bg-gradient-to-tr from-slate-100 via-teal-500 to-slate-100  p-2 hover:shadow-xl hover:shadow-teal-400 hover:rotate-12 hover:scale-90 transition-all ease-in-out"><svg id="svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class=" w-2 h-2 sm:w-3 sm:h-3 md:w-4 md:h-4 transition-transform ease-linear">
+                <path stroke-linecap="round" stroke-linejoin="round"  d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+              </svg>
+              <span>Hotel</span></div></div>
+              <div id="dropdown" class="hidden w-5/6 absolute rounded-3xl text-center ">
+               <div class="w-full rounded-xl bg-gradient-to-tr from-slate-100 via-teal-500 to-indigo-400  p-2 hover:shadow-xl hover:shadow-teal-400 hover:translate-x-6 hover:scale-75 transition-all ease-in-out"><a href="#">Eco</a></div>
+                <div class="w-full rounded-xl bg-gradient-to-tr from-slate-300 via-teal-600 to-indigo-500  p-2 hover:shadow-xl hover:shadow-teal-400 hover:translate-x-5 hover:scale-75 transition-all ease-in-out" ><a href="#">Lux</a></div>
+              </div>
+            </div>
+            <div class="w-1/12 rounded-3xl bg-gradient-to-r from-blue-300 via-purple-700 to-cyan-300 hover:scale-110"><div href="#" class="w-full rounded-md text-center bg-gradient-to-tr from-slate-100 via-teal-500 to-stone-100  p-2 hover:shadow-xl hover:shadow-teal-400 hover:rotate-12 hover:scale-90 transition-all ease-in-out"><span>Tour</span></div></div>
+            <div class="w-1/12 rounded-3xl bg-gradient-to-r from-blue-300 via-purple-600 to-cyan-300 hover:scale-110"><div href="#" class="w-full rounded-md text-center bg-gradient-to-tr from-slate-100 via-teal-500 to-stone-100 p-2 hover:shadow-xl hover:shadow-teal-400 hover:rotate-12 hover:scale-90 transition-all ease-in-out"><span>Us</span></div></div>
+        </nav>
+        <button id="nav-button" class="w-1/6 h-1/6 justify-self-end mr-auto sm:hidden" onclick="addclass_nav(),addclass_buttom()"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+            <svg class="w-3/6 h-3/6 " enable-background="new 0 0 50 50" height="50px" id="Layer_1" version="1.1" viewBox="0 0 50 50" width="50px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g><path d="M50,45.233C50,47.866,47.866,50,45.233,50H4.767C2.134,50,0,47.866,0,45.233V4.767     C0,2.134,2.134,0,4.767,0h40.466C47.866,0,50,2.134,50,4.767V45.233z" 
+            fill="#2899C0"/><path d="M50,28.948l-12.801-12.8l-18.343,1.913L16.9,16.129l-4.054,4.403l1.794,1.821l-1.794,4.864l1.794,1.811     l-1.652,4.996L28.959,50h16.274C47.866,50,50,47.866,50,45.233V28.948z" opacity="0.2"/><g><g><path d="M15.982,15.682v-0.004H15.9h-1.659h-0.406c-0.737,0-1.335,0.598-1.335,1.335v2.623       c0,0.737,0.598,1.335,1.335,1.335h0.406H15.9h0.082v-0.004c0.699-0.042,1.254-0.621,1.254-1.331v-2.623       C17.235,16.303,16.681,15.725,15.982,15.682z" fill="#FFFFFF"/><path d="M36.182,15.678H22.338h-2.146h-0.128v0.006c-0.678,0.064-1.208,0.634-1.208,1.329v2.623       c0,0.694,0.53,1.265,1.208,1.329v0.006h0.128h2.146h13.845c0.737,0,1.335-0.598,1.335-1.335v-2.623       C37.518,16.276,36.92,15.678,36.182,15.678z" fill="#FFFFFF"/></g><g><path d="M15.973,22.358v-0.004h-0.082h-1.659h-0.406c-0.737,0-1.335,0.598-1.335,1.335v2.623       c0,0.737,0.598,1.335,1.335,1.335h0.406h1.659h0.082v-0.004c0.699-0.042,1.254-0.621,1.254-1.331v-2.623       C17.226,22.979,16.672,22.4,15.973,22.358z" fill="#FFFFFF"/><path d="M36.174,22.353H22.329h-2.146h-0.128v0.006c-0.678,0.064-1.208,0.634-1.208,1.329v2.623       c0,0.694,0.53,1.265,1.208,1.329v0.006h0.128h2.146h13.845c0.737,0,1.335-0.598,1.335-1.335v-2.623       C37.509,22.951,36.911,22.353,36.174,22.353z" fill="#FFFFFF"/></g><g><path d="M15.973,29.033v-0.004h-0.082h-1.659h-0.406c-0.737,0-1.335,0.598-1.335,1.335v2.623       c0,0.737,0.598,1.335,1.335,1.335h0.406h1.659h0.082v-0.004c0.699-0.042,1.254-0.621,1.254-1.331v-2.623       C17.226,29.654,16.672,29.075,15.973,29.033z" fill="#FFFFFF"/><path d="M36.174,29.029H22.329h-2.146h-0.128v0.006c-0.678,0.064-1.208,0.634-1.208,1.329v2.623       c0,0.694,0.53,1.265,1.208,1.329v0.006h0.128h2.146h13.845c0.737,0,1.335-0.598,1.335-1.335v-2.623       C37.509,29.627,36.911,29.029,36.174,29.029z" fill="#FFFFFF"/></g></g></g></g></svg>
+        </button>
+        <logo></logo>
+        </header>
+        <div class="flex">
+            <div class="flex-col items-center justify-center w-full ">
+            <div  class="font-light mx-auto text-center font-serif text-4xl sm:text-6xl lg:text-6xl mt-16 hover:tracking-wide hover:capitalize shadow-md hover:shadow-indigo-500 bg-slate-800 bg-opacity-10">Live your dream</div>
+        <div class="font-sans text-center font-medium mt-3 hover:text-sky-950">Every where with everey thing that you want</div>
+    </div>
+        <nav id="navi" class="hidden flex-col w-3/12 h-2/6 z-10 mr-auto bg-opacity-40 gap-5 sm:hidden">
+            <div class="flex w-11/12 rounded-3xl bg-gradient-to-t from-blue-300 via-purple-500 to-cyan-300 hover:scale-110"><div href="#" class="flex w-full justify-center items-center rounded-md group bg-gradient-to-tr from-slate-300 via-teal-600 to-stone-300  p-2 hover:shadow-xl hover:shadow-teal-400 hover:translate-x-7 hover:scale-90 transition-all ease-in-out"><button class="w-4 h-4 ml-1" onclick="removeclass_nav(),removeclass_buttom()">
+                <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 50 50"  id="Layer_1" version="1.1" viewBox="0 0 50 50"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g><path d="M50,45.233C50,47.866,47.866,50,45.233,50H4.767C2.134,50,0,47.866,0,45.233V4.767     C0,2.134,2.134,0,4.767,0h40.466C47.866,0,50,2.134,50,4.767V45.233z" fill="#2899C0"/><path d="M37.029,15.342L15.342,37.029L28.313,50h16.92C47.866,50,50,47.866,50,45.233v-16.92L37.029,15.342z" opacity="0.2"/><g><path d="M37.029,32.482c0.601,0.601,0.601,1.576,0,2.177l-2.371,2.371c-0.601,0.601-1.576,0.601-2.177,0      L12.971,17.518c-0.601-0.601-0.601-1.576,0-2.177l2.371-2.371c0.601-0.601,1.576-0.601,2.177,0L37.029,32.482z" fill="#FFFFFF"/><path d="M32.482,12.971c0.601-0.601,1.576-0.601,2.177,0l2.371,2.371c0.601,0.601,0.601,1.576,0,2.177      L17.518,37.029c-0.601,0.601-1.576,0.601-2.177,0l-2.371-2.371c-0.601-0.601-0.601-1.576,0-2.177L32.482,12.971z" fill="#FFFFFF"/></g></g></g></svg>
+            </button>
+            <span>Ticket</span>
+              </div></div> 
+            <div class="w-11/12 rounded-3xl bg-gradient-to-t from-blue-300 via-purple-500 to-cyan-300 hover:scale-110"><div href="#" class=" rounded-md text-center bg-gradient-to-tr from-slate-300 via-teal-600 to-slate-300  p-2 hover:shadow-xl hover:shadow-teal-400 hover:translate-x-7 hover:scale-90 transition-all ease-in-out"><span>Hotel</span></div></div>
+            <div class="w-11/12 rounded-3xl bg-gradient-to-t from-blue-300 via-purple-500 to-cyan-300 hover:scale-110"><div href="#" class=" rounded-md text-center bg-gradient-to-tr from-slate-300 via-teal-600 to-stone-300  p-2 hover:shadow-xl hover:shadow-teal-400 hover:translate-x-7 hover:scale-90 transition-all ease-in-out"><span>Tour</span></div></div>
+            <div class="w-11/12 rounded-3xl bg-gradient-to-t from-blue-300 via-purple-500 to-cyan-300 hover:scale-110"><div href="#" class=" rounded-md text-center bg-gradient-to-tr from-slate-300 via-teal-600 to-stone-300 p-2 hover:shadow-xl hover:shadow-teal-400 hover:translate-x-7 hover:scale-90 transition-all ease-in-out"><span>Us</span></div></div>
+        </nav>
+        
+    </div>
+<main class="text-xs sm:text-base lg:text-lg">
+        
+        <section class="flex max-sm:flex-wrap text-xm sm:text-base lg:text-lg w-4/6 h-1/6 px-6 py-3 rounded-xl gap-5 sm:gap-3 md:gap-5 lg:gap-8 bg-emerald-800 bg-opacity-40 mx-auto mt-32">
+            <div href="#" class="rounded-xl w-1/4 max-sm:w-5/12 bg-slate-300 text-center animate-amir hover:-translate-y-8 hover:scale-110"><?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 20.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg version="1.1" id="Layer_1_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  class="w-11/12 h-9/12 mx-auto"   viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+                <g id="Guide">
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                </g>
+                <path d="M60.104,29.401l-0.765-0.153c-0.553-0.111-1.056-0.38-1.455-0.779l-2.049-2.049C54.919,25.504,53.702,25,52.407,25h-7.591
+                    C44.928,24.686,45,24.352,45,24V10c0-1.654-1.346-3-3-3h-5V5c0-1.654-1.346-3-3-3h-4c-1.654,0-3,1.346-3,3v2h-5
+                    c-1.654,0-3,1.346-3,3v14c0,0.352,0.072,0.686,0.184,1h-6.649l-5.703-8.555C6.646,16.167,6.334,16,6,16H1c-0.552,0-1,0.448-1,1v9
+                    h0.025C0.02,26,0,25.956,0,26v6c0,0.441,0.29,0.831,0.713,0.958l20,6C20.806,38.986,20.903,39,21,39h4v12c0,0.552,0.448,1,1,1h5
+                    c0.379,0,0.725-0.214,0.895-0.553L38.118,39h21.035C61.826,39,64,36.826,64,34.153C64,31.851,62.361,29.853,60.104,29.401z M43,10
+                    v14c0,0.551-0.449,1-1,1h-3V9h3C42.551,9,43,9.449,43,10z M27,25V9h10v16H27z M29,5c0-0.551,0.449-1,1-1h4c0.551,0,1,0.449,1,1v2h-6
+                    V5z M21,24V10c0-0.551,0.449-1,1-1h3v16h-3C21.449,25,21,24.551,21,24z M10.132,25H7.5l-5.25-7h3.215L10.132,25z M2,21l3,4H2V21z
+                     M30.382,50H27V38v-4h11.382l-1.776,3.553L30.382,50z M59.153,37H39.118l1.776-3.553c0.155-0.31,0.138-0.678-0.044-0.973
+                    C40.668,32.18,40.347,32,40,32H26c-0.552,0-1,0.448-1,1v4h-3.853L2,31.256V27h20h20h10.407c0.76,0,1.475,0.296,2.013,0.834
+                    l2.049,2.049c0.679,0.679,1.535,1.138,2.477,1.326l0.765,0.153C61.038,31.627,62,32.801,62,34.153C62,35.723,60.723,37,59.153,37z"
+                    />
+                <rect x="49" y="29" width="2" height="2"/>
+                <rect x="45" y="29" width="2" height="2"/>
+                <rect x="41" y="29" width="2" height="2"/>
+                <rect x="37" y="29" width="2" height="2"/>
+                <rect x="33" y="29" width="2" height="2"/>
+                <rect x="29" y="29" width="2" height="2"/>
+                <rect x="25" y="29" width="2" height="2"/>
+                <rect x="21" y="29" width="2" height="2"/>
+                <rect x="17" y="29" width="2" height="2"/>
+                <rect x="13" y="29" width="2" height="2"/>
+                <rect x="31" y="15" width="2" height="2"/>
+                <rect x="8" y="49" width="13" height="2"/>
+                <rect x="4" y="49" width="2" height="2"/>
+                <rect y="49" width="2" height="2"/>
+                <rect x="57" y="45" width="7" height="2"/>
+                <rect x="49" y="45" width="2" height="2"/>
+                <rect x="53" y="45" width="2" height="2"/>
+                <rect x="45" y="45" width="2" height="2"/>
+                <rect x="46" y="60" width="13" height="2"/>
+                <rect x="42" y="60" width="2" height="2"/>
+                <rect x="38" y="60" width="2" height="2"/>
+                </svg>
+                <span>Airplane</span><P></P></div>
+            <div href="#" class="rounded-xl w-1/4 max-sm:w-5/12 bg-slate-300 text-center animate-amir300 hover:-translate-y-8 hover:scale-110"><div class="w-full h-1/6"></div>
+                <?xml version="1.0" encoding="utf-8"?>
+                <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                class="w-11/12 h-11/12  mx-auto my-auto"   viewBox="0 0 124 94" style="enable-background:new 0 0 124 94;" xml:space="preserve">
+                <style type="text/css">
+                    .st0{fill:#DD738C;}
+                    .st1{fill:#2896E0;}
+                    .st2{fill:#000000;}
+                    .st3{fill:#636871;}
+                </style>
+                <title>train</title>
+                <ellipse class="st0" cx="93.8" cy="50.4" rx="5.6" ry="5.6"/>
+                <ellipse class="st0" cx="77.1" cy="50.4" rx="5.6" ry="5.6"/>
+                <ellipse class="st0" cx="38.2" cy="50.4" rx="5.6" ry="5.6"/>
+                <ellipse class="st0" cx="21.5" cy="50.4" rx="5.6" ry="5.6"/>
+                <path class="st1" d="M82.7,29h-5.4c-1.1,0-2-0.9-2-2s0.9-2,2-2h5.4c1.1,0,2,0.9,2,2S83.8,29,82.7,29z"/>
+                <path class="st1" d="M67.3,29H62c-1.1,0-2-0.9-2-2s0.9-2,2-2h5.4c1.1,0,2,0.9,2,2S68.5,29,67.3,29L67.3,29z"/>
+                <path class="st1" d="M52,29h-5.4c-1.1,0-2-0.9-2-2s0.9-2,2-2H52c1.1,0,2,0.9,2,2S53.1,29,52,29z"/>
+                <path class="st1" d="M36.6,29h-5.4c-1.1,0-2-0.9-2-2s0.9-2,2-2h5.4c1.1,0,2,0.9,2,2S37.7,29,36.6,29z"/>
+                <path class="st1" d="M21.3,29h-5.4c-1.1,0-2-0.9-2-2s0.9-2,2-2h5.4c1.1,0,2,0.9,2,2S22.4,29,21.3,29z"/>
+                <path class="st2" d="M117.6,34.8L99.4,20.7c-7.7-6-17.2-9.3-26.9-9.3H13.6c-1.1,0-2,0.9-2,2c0,1.1,0.9,2,2,2h58.9
+                    c8.9,0,17.5,3,24.5,8.4L115.2,38c1.3,1.1,2.1,2.7,2.1,4.4c0,3-2.4,5.5-5.5,5.5H101c-1-3-3.9-5.2-7.3-5.1c-4.2,0-7.6,3.5-7.6,7.7
+                    c0,4.2,3.5,7.6,7.7,7.6c3.7,0,6.7-2.6,7.4-6.1h10.6c5.2,0,9.5-4.3,9.5-9.5C121.3,39.4,120,36.7,117.6,34.8z M97.4,50.4
+                    c0,2-1.7,3.6-3.7,3.6c-2,0-3.6-1.7-3.6-3.7c0-2,1.7-3.6,3.7-3.6C95.8,46.8,97.4,48.4,97.4,50.4C97.4,50.4,97.4,50.4,97.4,50.4z"/>
+                <path class="st2" d="M84.7,50.3c0-4.2-3.5-7.6-7.7-7.6c-3.3,0-6.1,2.2-7.1,5.1H45.3c-1-3-3.9-5.2-7.3-5.1c-4.2,0-7.6,3.5-7.6,7.7
+                    c0,4.2,3.5,7.6,7.7,7.6c3.7,0,6.7-2.6,7.4-6.1h24c0.7,3.5,3.8,6.1,7.5,6.1C81.3,58,84.7,54.6,84.7,50.3
+                    C84.7,50.4,84.7,50.3,84.7,50.3z M41.7,50.4c0,2-1.7,3.6-3.7,3.6c-2,0-3.6-1.7-3.6-3.7c0-2,1.7-3.6,3.7-3.6
+                    C40.2,46.8,41.7,48.4,41.7,50.4C41.7,50.4,41.7,50.4,41.7,50.4z M80.7,50.4c0,2-1.7,3.6-3.7,3.6s-3.6-1.7-3.6-3.7
+                    c0-2,1.7-3.6,3.7-3.6C79.1,46.8,80.7,48.4,80.7,50.4C80.7,50.4,80.7,50.4,80.7,50.4z"/>
+                <path class="st2" d="M29,50.3c0-4.2-3.5-7.6-7.7-7.5c-3.3,0-6.1,2.2-7.1,5.1H1.9c-1.1,0-1.9,0.9-1.9,2c0,1.1,0.9,2,1.9,2h12
+                    c0.7,3.5,3.8,6.1,7.6,6.1C25.6,58,29,54.6,29,50.3C29,50.4,29,50.3,29,50.3z M25,50.5c0,2-1.7,3.6-3.7,3.5c-2,0-3.6-1.7-3.5-3.7
+                    c0-2,1.7-3.6,3.7-3.5C23.4,46.8,25,48.4,25,50.5C25,50.4,25,50.4,25,50.5z"/>
+                <path class="st3" d="M25.7,4H12.3c-1.1,0-2-0.9-2-2s0.9-2,2-2h13.4c1.1,0,2,0.9,2,2S26.8,4,25.7,4z"/>
+                <path class="st3" d="M4.5,4H2.9c-1.1,0-2-0.9-2-2s0.9-2,2-2h1.6c1.1,0,2,0.9,2,2S5.6,4,4.5,4z"/>
+                <path class="st3" d="M104.8,15.4c-0.4,0-0.8-0.1-1.1-0.3l-3.3-2.2c-0.9-0.6-1.3-1.8-0.7-2.7c0.6-0.9,1.8-1.3,2.7-0.7
+                    c0,0,0.1,0.1,0.1,0.1l3.3,2.2c0.9,0.6,1.2,1.8,0.6,2.8C106.1,15,105.5,15.4,104.8,15.4L104.8,15.4z"/>
+                <path class="st3" d="M122,28.7c-0.4,0-0.9-0.1-1.2-0.4l-11.2-8.7c-0.9-0.7-1-1.9-0.3-2.8c0.7-0.9,1.9-1,2.8-0.4l11.2,8.7
+                    c0.9,0.7,1,1.9,0.4,2.8C123.2,28.4,122.6,28.7,122,28.7z"/>
+                </svg>
+                <span>Train</span><P></P></div>
+            <div href="#" class="rounded-xl w-1/4 max-sm:w-5/12 text-center bg-slate-300 animate-amir500 hover:-translate-y-8 hover:scale-110"><?xml version="1.0" ?>
+                <svg class="w-11/12 h-9/12 mx-auto" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="Layer 20" id="Layer_20">
+                <path d="M60,18H59V17a3,3,0,0,0-3-3H8a3,3,0,0,0-3,3v1H4a3,3,0,0,0-3,3V44a3,3,0,0,0,3,3H8.42a5,5,0,0,0,9.16,0H48.42a5,5,0,0,0,9.16,0H60a3,3,0,0,0,3-3V21A3,3,0,0,0,60,18Zm1,3V34H51V20h9A1,1,0,0,1,61,21ZM7,17a1,1,0,0,1,1-1H56a1,1,0,0,1,1,1v1H7ZM4,20H49V35a1,1,0,0,0,1,1H61v5H56v0a4.88,4.88,0,0,0-6,0v0H47V30a1,1,0,0,0-1-1H34a1,1,0,0,0-1,1V41H16v0a4.88,4.88,0,0,0-6,0v0H3V21A1,1,0,0,1,4,20ZM41,31h4V45H41ZM39,45H35V31h4ZM4,45a1,1,0,0,1-1-1V43H8.42A4.94,4.94,0,0,0,8,45Zm9,3a3,3,0,1,1,3-3A3,3,0,0,1,13,48Zm4.58-5H33v2H18A4.94,4.94,0,0,0,17.58,43ZM47,45V43h1.42A4.94,4.94,0,0,0,48,45Zm6,3a3,3,0,1,1,3-3A3,3,0,0,1,53,48Zm7-3H58a4.94,4.94,0,0,0-.42-2H61v1A1,1,0,0,1,60,45Z"/>
+                <path d="M6,34H30a1,1,0,0,0,1-1V23a1,1,0,0,0-1-1H6a1,1,0,0,0-1,1V33A1,1,0,0,0,6,34Zm1-6h4v4H7Zm16,0v4H19V28Zm-6,4H13V28h4Zm8,0V28h4v4Zm4-8v2H7V24Z"/>
+                <path d="M34,28H46a1,1,0,0,0,1-1V23a1,1,0,0,0-1-1H34a1,1,0,0,0-1,1v4A1,1,0,0,0,34,28Zm1-4H45v2H35Z"/></g></svg>
+                <span>Bus</span><P></P></div>
+            <div href="#" class=" rounded-xl w-1/4 max-sm:w-5/12 text-center bg-slate-300 animate-amir750 hover:-translate-y-8 hover:scale-110" ><?xml version="1.0" ?>
+                <svg class="w-11/12 h-9/12 mx-auto" style="enable-background:new 0 0 64 64;" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+                .st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                .st1{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+            </style><g id="guides"/><g id="_x32_5._checking"/><g id="_x32_4._faucet"/><g id="_x32_3._drink"/><g id="_x32_2._hotel_key"/><g id="_x32_1._rating"/><g id="_x32_0._map"/><g id="_x31_9._wifi"/><g id="_x31_8._swimming_pool"/><g id="_x31_7._booking">
+                <path class="st0" d="M27,49H10c-1.1045694,0-2-0.8954315-2-2V19c0-1.1045704,0.8954306-2,2-2h4.9997501"/><path class="st0" d="M28.9998512,17H34c1.1045685,0,2,0.8954296,2,2v18.0000687"/><path class="st0" d="M29,14c0,8-7,13-7,13s-7-5-7-13c0-3.8659935,3.1340065-7,7-7S29,10.1340065,29,14z"/><circle class="st0" cx="22" cy="14" r="2"/>
+                <path class="st0" d="M30.3786793,49.7426414l-2.1213207-2.1213226l-1.4142132,1.4142151   c-0.7810478,0.7810478-0.7810478,2.0473785,0,2.8284264l3.5355339,3.5355339c1.5620975,1.5620995,4.094759,1.5620995,5.6568546,0   l6.3639603-6.3639603c1.5620995-1.5620956,1.5620995-4.0947571,0-5.6568527l-4.9497452-4.949749l-1.0606613-1.0606613   c-0.5857887-0.5857849-1.5355339-0.5857849-2.1213188,0l-0.0000038,0.0000038c-0.5857849,0.5857849-0.5857849,1.5355301,0,2.121315   l1.0606613,1.0606613l-1.0606613-1.0606613c-0.5857849-0.5857849-1.5355301-0.5857849-2.1213188,0v0.0000038   c-0.5857868,0.5857849-0.5857868,1.5355339,0,2.1213188l1.0606613,1.0606613l-1.0606613-1.0606613   c-0.5857868-0.5857849-1.5355339-0.5857849-2.1213188,0h-0.0000019c-0.5857868,0.5857887-0.5857868,1.5355339,0,2.1213188   l1.0606613,1.0606613l-4.2426434-4.2426414c-0.7810478-0.7810478-2.0473747-0.7810478-2.8284225,0l-0.0000038,0.0000038   c-0.7810478,0.7810478-0.7810478,2.0473747,0,2.8284225l4.2426414,4.2426414L30.3786793,49.7426414z"/>
+                <line class="st0" x1="44" x2="56" y1="38" y2="38"/><line class="st0" x1="47" x2="56" y1="44" y2="44"/><line class="st0" x1="46" x2="56" y1="50" y2="50"/><rect class="st0" height="6" width="5" x="12" y="31"/><line class="st0" x1="12" x2="17" y1="40" y2="40"/><line class="st0" x1="12" x2="17" y1="43" y2="43"/></g><g id="_x31_6._pasport"/><g id="_x31_5._coffee_cup"/><g id="_x31_4._bathtub"/><g id="_x31_3._bedroom"/><g id="_x31_2._air_conditioner"/><g id="_x31_1._breakfast"/><g id="_x31_0._parking_lot"/><g id="_x39_._room_service"/><g id="_x38_._elevator"/><g id="_x37_._reception"/><g id="_x36_._relax"/><g id="_x35_._car_rental"/><g id="_x34_._rental"/><g id="_x33_._smoking_area"/><g id="_x32_._exercise"/><g id="_x31_._luggage"/></svg>
+                <span>Hotel</span><P></P></div>
+        </section>
+    </main>
+    </div>
+</body>
+</html>
